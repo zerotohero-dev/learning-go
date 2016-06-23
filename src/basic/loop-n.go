@@ -8,8 +8,8 @@ func main() {
 	counter := 0
 
 	// (N(N+1))/2
-
-
+	//
+	// O(N^2)
 	for i := 0; i < N; i++ {
 		for j := N; j > i; j-- {
 			a = a + i + j

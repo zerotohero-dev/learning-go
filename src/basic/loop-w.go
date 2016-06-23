@@ -10,7 +10,7 @@ func main() {
 
 	counter := 0
 
-	// log(N)
+	// O(log(N))
 	for i > 0 {
 		a += i
 		i /= 2
