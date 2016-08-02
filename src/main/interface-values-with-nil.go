@@ -20,6 +20,8 @@ func (t *T) M() {
 	fmt.Println(t.S)
 }
 
+
+
 func describe(i I) {
 	fmt.Printf("(%v, %T\n", i, i)
 }
