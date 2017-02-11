@@ -25,3 +25,6 @@ _testmain.go
 
 .idea
 learning-go.iml
+
+go/src/gopl.io
+go/bin
