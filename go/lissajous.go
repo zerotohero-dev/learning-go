@@ -1,5 +1,7 @@
 package main
 
+// 10 — 12 — 14 — 15
+
 // go run lissajous.go > anim.gif
 
 import (
