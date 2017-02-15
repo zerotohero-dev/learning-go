@@ -16,10 +16,10 @@ func main() {
     }()
 
     go func() {
-            for x := range naturals {
-                squares <- x * x
-            }
-            close(squares)
+        for x := range naturals {
+            squares <- x * x
+        }
+        close(squares)
     }()
 
     for x := range squares {
