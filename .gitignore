@@ -27,5 +27,7 @@ _testmain.go
 learning-go.iml
 
 go/src/gopl.io
+src/github.com
+src/golang.org
 go/bin
 bin
