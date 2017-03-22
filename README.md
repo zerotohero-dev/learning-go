@@ -1,10 +1,17 @@
-Some code you see here are either identical or slighly modified forms of `go tool tour` website.
+## About This Repository
 
-I am also copying and pasting from other publicly available sources.
+This is a repository that I experiment with the [Go language](https://golang.org). — Feel free to tag along :)
 
-Some of the sources that I used are here, though I don’t have time and energy to book keep all my sources, as my goal is to learn s#!% first.
+## The Folder Structure
 
-So if you feel like I’ve forgotten to give attribution to your work, please let me know via <me@volkan.io> and I will respond promptly.
+* Project root will also be the `$GOPATH` I’m working on.
+* `src` will contain the go packages as usual.
+* `src/volkan.io` will be the main project workspace.
+* `src/volkan.io/examples` will contain runnable binaries.
+    * So, for example, executing `go run src/volkan.io/examples/000_tree_info.go` will run a sample binary.
 
-* <https://tour.golang.org/welcome/1>
-* … TODO: insert other links here, as you work along.
+## What Happened to the Older Files
+
+Well… I deleted them because I wanted a fresh start.
+
+You can browse the this repo’s history if you’re curious.

@@ -26,6 +26,7 @@ _testmain.go
 .idea
 learning-go.iml
 
+___
 go/src/gopl.io
 src/github.com
 src/golang.org
