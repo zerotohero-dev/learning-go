@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	tree := ds.Tree{nil, 42, nil}
+	tree := ds.BTree{nil, 42, nil}
 
 	fmt.Println("Tree:")
 	fmt.Printf("Typeof tree: “%T”.\n", tree)
