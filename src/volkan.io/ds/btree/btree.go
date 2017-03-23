@@ -1,4 +1,4 @@
-package tree
+package btree
 
 // BTree is a binary tree.
 type BTree struct {

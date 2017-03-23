@@ -3,23 +3,23 @@ package main
 import (
 	"fmt"
 	"reflect"
-	"volkan.io/ds/tree"
+	"volkan.io/ds/btree"
 )
 
 func main() {
-	tree := tree.BTree{
-		&tree.BTree{nil, 42, nil},
+	tree := btree.BTree{
+		&btree.BTree{nil, 42, nil},
 
 		43,
 
-		&tree.BTree{
-			&tree.BTree{
-				&tree.BTree{nil, 44, nil},
+		&btree.BTree{
+			&btree.BTree{
+				&btree.BTree{nil, 44, nil},
 				45,
 				nil,
 			},
 			46,
-			&tree.BTree{nil, 99, nil},
+			&btree.BTree{nil, 99, nil},
 		},
 	}
 
