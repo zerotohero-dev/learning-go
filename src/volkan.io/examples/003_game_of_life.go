@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	l := life.NewLife(149, 19)
+	l := life.New(149, 19)
 
 	for i := 0; i < 300; i++ {
 		l.Step()

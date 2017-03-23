@@ -1,3 +1,0 @@
-package 'fibonacci'
-
-func Closure()

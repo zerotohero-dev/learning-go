@@ -1,11 +1,11 @@
-package life
+package field
 
 type Field struct {
 	s    [][]bool
 	w, h int
 }
 
-func NewField(w, h int) *Field {
+func New(w, h int) *Field {
 	s := make([][]bool, h)
 
 	for i := range s {

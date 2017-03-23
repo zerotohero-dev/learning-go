@@ -35,4 +35,13 @@ func main() {
 	fmt.Println("theBox", theBox.Value)
 	fmt.Println("box2 (ptr)", box2.Value)
 
+	/*
+	   Output:
+
+	   theBox 42
+	   box1 (val) 43
+	   ________
+	   theBox 43
+	   box2 (ptr) 43
+	*/
 }
