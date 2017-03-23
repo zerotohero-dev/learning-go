@@ -7,26 +7,26 @@ import (
 )
 
 func main() {
-	tree := btree.BTree{
-		&btree.BTree{nil, 42, nil},
+	tree := btree.New(
+		btree.New(nil, 42, nil),
 
 		43,
 
-		&btree.BTree{
-			&btree.BTree{
-				&btree.BTree{nil, 44, nil},
+		btree.New(
+			btree.New(
+				btree.New(nil, 44, nil),
 				45,
 				nil,
-			},
+			),
 			46,
-			&btree.BTree{nil, 99, nil},
-		},
-	}
+			btree.New(nil, 99, nil),
+		),
+	)
 
 	fmt.Printf("Typeof tree: “%T”.\n", tree)
 	fmt.Printf("Typeof tree: “%s”.\n", reflect.TypeOf(tree))
 	fmt.Println("")
-	fmt.Println(&tree)
+	fmt.Println(tree)
 
 	/*
 		Output:

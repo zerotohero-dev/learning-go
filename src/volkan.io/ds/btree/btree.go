@@ -8,3 +8,6 @@ type BTree struct {
 }
 
 
+func New(left *BTree, value interface{}, right *BTree) *BTree {
+	return &BTree{ left, value, right }
+}
