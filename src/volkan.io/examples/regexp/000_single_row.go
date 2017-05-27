@@ -5,20 +5,18 @@ import (
 	"regexp"
 )
 
-var re = regexp.MustCompile(`(?i)[qwertyuiop]*|[asdfghjkl]*|[zxcvbnm]*`)
+var re = regexp.MustCompile(`(?i)^[qwertyuiop]*$|^[asdfghjkl]*$|^[zxcvbnm]*$`)
 
 func findWords(words []string) []string {
-	result := re.MatchString("flag")
+	results := make([]string, 0)
 
-	fmt.Println(result)
+	for _, str := range words {
+		if re.MatchString(str) {
+			results = append(results, str)
+		}
+	}
 
-	// // 	if match {
-	// // 		return ["a"]
-	// // 	}
-
-	// 	return string[]{"b"}
-
-	return words
+	return results
 }
 
 func main() {
