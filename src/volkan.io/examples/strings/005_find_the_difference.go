@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func findTheDifference(s string, t string) rune {
+func findTheDifference(s string, t string) byte {
 	rs := []rune(s)
 	rt := []rune(t)
 	theRune := rt[len(s)]
@@ -12,7 +12,7 @@ func findTheDifference(s string, t string) rune {
 		theRune += rt[i]
 	}
 
-	return theRune
+	return byte(theRune)
 }
 
 func main() {
