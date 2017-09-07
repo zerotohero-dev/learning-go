@@ -32,3 +32,5 @@ src/github.com
 src/golang.org
 go/bin
 bin
+
+.DS_Store

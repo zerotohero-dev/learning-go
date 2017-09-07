@@ -4,11 +4,15 @@ This is a repository that I experiment with the [Go language](https://golang.org
 
 ## The Folder Structure
 
-* Project root will also be the `$GOPATH` I’m working on.
-* `src` will contain the go packages as usual.
-* `src/volkan.io` will be the main project workspace.
-* `src/volkan.io/examples` will contain runnable binaries.
-    * So, for example, executing `go run src/volkan.io/examples/000_tree_info.go` will run a sample binary.
+Each folder under the root of this repository is a mini Go project that assumes to have a separate `GOPATH`.
+
+So for eaxmple when running `./hello-strings` the `$GOPATH` environment variable should be set to that folder.
+
+The subfolders of  these folders reflect a typical Go project folder structure:
+
+* `src`: Source files.
+* `bin`: Generated binary files.
+* etc.
 
 ## Where Do The Examples Come From?
 

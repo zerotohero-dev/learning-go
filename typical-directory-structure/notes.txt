@@ -1,0 +1,23 @@
+typical-directory-structure> echo $GOPATH
+/Users/volkan/PROJECTS/learning-go/typical-directory-structure
+
+go install hello
+
+go fmt hello
+
+https://golang.org/pkg/fmt => docs
+
+godoc math | more => terminal
+
+ godoc math Sinh | more
+use 'godoc cmd/math' for documentation on the math command
+
+func Sinh(x float64) float64
+    Sinh returns the hyperbolic sine of x.
+
+    Special cases are:
+
+        Sinh(±0) = ±0
+        Sinh(±Inf) = ±Inf
+        Sinh(NaN) = NaN
+
