@@ -1,0 +1,15 @@
+<p>
+    <b>Name:</b> {{.FirstName}} {{.LastName}}
+</p>
+<p>
+    <b>Email:</b> {{.Email}}
+</p>
+<p>
+    <b>Age:</b> {{.Age}}
+</p>
+
+<p>
+    <a href="/user?e{{.Email}}">{{.Email}}</a>
+</p>
+
+{{ template "file3.html" .Email }}

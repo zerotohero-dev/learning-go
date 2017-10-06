@@ -34,3 +34,5 @@ go/bin
 bin
 
 .DS_Store
+
+*.swp

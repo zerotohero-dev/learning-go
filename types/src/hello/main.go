@@ -1,18 +1,18 @@
 package main
 
 import (
-	"net/http"
-	"io/ioutil"
 	"fmt"
+	"io/ioutil"
+	"net/http"
 )
 
 // You can attach functions, that are called “methods” to a type;
 // which is, kind of, closer to object-orientation.
 
 type webPage struct {
-	url string
+	url  string
 	body []byte
-	err error
+	err  error
 }
 
 type summableSlice []int
@@ -64,13 +64,14 @@ func (w *webPage) isOK() bool {
 }
 
 func main() {
-	// This will also work just fine because go will pass a pointer to this struct
-	// into the receiver realizing we actually want to use a pointer type.
+	// 		w := webPage{url: "https://bytesized.tv"}
+	// This will also work just fine because go will pass a pointer to
+	// the struct abouve, into the receiver realizing we actually want to
+	// use a pointer type.
 	// But to be explicit, it is better to use the address of the object.
+	// 		w.get() // equivalent to `{&w}.get()
 	//
-	// w := webPage{url: "https://bytesized.tv"}
-	//
-	// So this usage is better:
+	// So this usage is better. — Being explicit is generally better.
 	w := &webPage{url: "https://bytesized.tv"}
 
 	w.get()
