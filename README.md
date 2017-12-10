@@ -1,14 +1,17 @@
 ## About This Repository
 
-This is a repository that I experiment with the [Go language](https://golang.org). — Feel free to tag along :)
+This is a repository that I experiment with the
+[Go language](https://golang.org). — Feel free to tag along :)
 
 ## The Folder Structure
 
-Each folder under the root of this repository is a mini Go project that assumes to have a separate `GOPATH`.
+Each folder under the root of this repository is a mini Go project that assumes
+to have a separate `GOPATH`.
 
-So for eaxmple when running `./hello-strings` the `$GOPATH` environment variable should be set to that folder.
+So for example when running `./hello-strings` the `$GOPATH` environment variable
+should be set to that folder.
 
-The subfolders of  these folders reflect a typical Go project folder structure:
+The sub-folders of  these folders reflect a typical Go project folder structure:
 
 * `src`: Source files.
 * `bin`: Generated binary files.
@@ -18,7 +21,8 @@ The subfolders of  these folders reflect a typical Go project folder structure:
 
 I curate them from various sources. I also write some of them myself.
 
-I’ll be listing the resources that I utilize here, though if I miss to give credit where it’s due, just let me know, and I’ll update this page accordingly.
+I’ll be listing the resources that I utilize here, though if I miss to give credit
+where it’s due, just let me know, and I’ll update this page accordingly.
 
 * <https://golang.org/> and <https://tour.golang.org/>
 * … more to come …
